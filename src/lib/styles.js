@@ -90,29 +90,13 @@ export const styles = {
     backgroundColor: '#f5f5f5',
     padding: 10,
     borderRadius: 4,
-    ...Platform.select({
-      ['ios']: {
-        fontFamily: 'Courier',
-      },
-      ['android']: {
-        fontFamily: 'monospace',
-      },
-    }),
   },
   code_block: {
     borderWidth: 1,
     borderColor: '#CCCCCC',
     backgroundColor: '#f5f5f5',
     padding: 10,
-    borderRadius: 4,
-    ...Platform.select({
-      ['ios']: {
-        fontFamily: 'Courier',
-      },
-      ['android']: {
-        fontFamily: 'monospace',
-      },
-    }),
+    borderRadius: 4
   },
   fence: {
     borderWidth: 1,
@@ -120,14 +104,6 @@ export const styles = {
     backgroundColor: '#f5f5f5',
     padding: 10,
     borderRadius: 4,
-    ...Platform.select({
-      ['ios']: {
-        fontFamily: 'Courier',
-      },
-      ['android']: {
-        fontFamily: 'monospace',
-      },
-    }),
   },
 
   // Tables
@@ -171,13 +147,6 @@ export const styles = {
   text: {},
   textgroup: {},
   paragraph: {
-    marginTop: 10,
-    marginBottom: 10,
-    flexWrap: 'wrap',
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-    width: '100%',
   },
   hardbreak: {
     width: '100%',
